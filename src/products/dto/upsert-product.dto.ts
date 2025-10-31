@@ -1,7 +1,9 @@
-import { IsNotEmpty, IsString } from "class-validator";
+import { IsNotEmpty } from "class-validator";
 
-export class UpsertProductDTO {
-    @IsString()
+export class UpsertDTO {
     @IsNotEmpty()
-    name: string;
+    nome: string;
+    
+    @IsNotEmpty()
+    idade: number;
 }
